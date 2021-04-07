@@ -1,0 +1,37 @@
+{
+    "name": "Demo Bot",
+    "description": "Pyrogram Demo Bot",
+    "logo": "https://telegra.ph/file/7d2d38176311dc045f7d5.jpg",
+    "keywords": [
+        "Telegram-bot"
+    ],
+    "website": "https://t.me/vkprojects",
+    "repository": "https://github.com/Poppit-pop/DemoBot",
+    "success_url": "https://t.me/vkprojects",
+    "env": {
+        "TG_BOT_TOKEN": {
+            "description": "You Telegram Bot Token from @BotFather",
+            "value": "1771104535:AAEjluqkOFOTl5qdNrFl-6PlTR2XdSDK9fQ"
+        },
+        "API_HASH": {
+            "description": "Your API Hash from my.telegram.org",
+            "value": "abeaa3a9ff9b7e87ca7c2b932cb68af8"
+        },
+        "APP_ID": {
+            "description": "Your API ID from my.telegram.org",
+            "value": "3927671"
+        }
+    },
+    "addons": [],
+    "buildpacks": [
+        {
+            "url": "heroku/python"
+        }
+    ],
+    "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "free"
+        }
+    }
+}
